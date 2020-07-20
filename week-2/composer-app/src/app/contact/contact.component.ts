@@ -1,3 +1,11 @@
+/**
+ * Title: contact.component.ts
+ * Author: Professor Krasso
+ * Date: 19 July 2020
+ * Modified By: Sarah Kovar
+ * Description: Contact component
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({

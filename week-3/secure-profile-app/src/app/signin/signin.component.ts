@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  signin.component.ts
+; Author: Professor Krasso
+; Date:   12 July 2020
+; Modified by: Sarah Kovar
+; Description: Signin Component module
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 

@@ -1,14 +1,19 @@
 /**
- * Title: composer.class.ts
+ * Title: composer.service.ts
  * Author: Professor Krasso
- * Date: 19 July 2020
+ * Date: 2 August 2020
  * Modified By: Sarah Kovar
- * Description: Composer class creating composer with full name and genre
+ * Description: Composer service
  */
 
-import {  IComposer } from './composer.interface';
-//create Composer class with full name and genre
-export class Composer {
+
+import { Injectable } from '@angular/core';
+import { IComposer } from './composer.interface';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ComposerService {
 
   composers: Array<IComposer>;
 
@@ -44,3 +49,7 @@ export class Composer {
   }
 
 }
+
+
+
+

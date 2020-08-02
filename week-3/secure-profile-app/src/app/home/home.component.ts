@@ -1,3 +1,13 @@
+/*
+============================================
+; Title:  home.component.ts
+; Author: Professor Krasso
+; Date:   12 July 2020
+; Modified by: Sarah Kovar
+; Description: Home Component module
+;===========================================
+*/
+
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 

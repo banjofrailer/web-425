@@ -27,6 +27,7 @@ export class WishlistCreateComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
   addItem() {
     console.log('Inside wishlist-create.component.ts (child) - addItem() function');
     this.addItemEmitter.emit({

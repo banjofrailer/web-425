@@ -1,3 +1,11 @@
+/**
+ * Title: base-layout.component.ts
+ * Author: Professor Krasso
+ * Date: 15 August 2020
+ * Modified By: Sarah Kovar
+ * Description: Base Layout Component
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,7 +15,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BaseLayoutComponent implements OnInit {
 
-  constructor() { }
+  assignment: string;
+
+  constructor() {
+    this.assignment = 'Exercise 6.3 - Layouts';
+  }
 
   ngOnInit(): void {
   }

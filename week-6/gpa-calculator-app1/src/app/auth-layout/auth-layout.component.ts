@@ -1,4 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+/**
+ * Title: auth-layout.component.ts
+ * Author: Professor Krasso
+ * Date: 15 August 2020
+ * Modified By: Sarah Kovar
+ * Description: Auth-Layout Component
+ */
+
+ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-auth-layout',

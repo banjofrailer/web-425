@@ -1,0 +1,38 @@
+<mat-toolbar class="toolbar">
+
+  <mat-toolbar-row>
+
+    <div class="logo">
+      <img src="./assets/IMG_20180207_100528.jpg" height="80" />
+    </div>
+
+    <div style="width: 80%">
+      <div fxLayout="row wrap" fxLayoutDesign="end start">
+        <button mat-button routerLink="/home">Home</button>
+        <button mat-button routerLink="/order">Place Order</button>
+        <button mat-button routerLink="/contact">Contact</button>
+      </div>
+    </div>
+  </mat-toolbar-row>
+  </mat-toolbar>
+
+  <br />
+  <div fxLayout="row wrap">
+
+    <div fxFlex>
+
+      <mat-card class="main_container">
+        <mat-card-title class="blue">
+          <h2>Bob's Computer Repair</h2>
+        </mat-card-title>
+
+        <br />
+        <br />
+
+        <mat-card-content>
+          <router-outlet></router-outlet>
+        </mat-card-content>
+
+      </mat-card>
+    </div>
+  </div>

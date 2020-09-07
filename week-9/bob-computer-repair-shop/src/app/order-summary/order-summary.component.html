@@ -1,0 +1,23 @@
+<mat-dialog-content>
+  <h2>Order Summary</h2>
+  <mat-card>
+    <mat-card-content>
+    <h2>Date: {{ orderDate | date: 'short' }}</h2>
+    <h3>Services:</h3>
+    <p *ngFor="let item of checkedItems">
+      {{ item.name }}
+    </p>
+    <hr>
+    <h3>Standard Fees:</h3>
+    <p>Parts Total: ${{partsValue | number: '1.2' }}
+    </p>
+    <p>Labor Total ($50/hour): ${{ laborValue * 50 | number: '1.2' }} ({{ laborValue }})
+    </p>
+    <hr>
+    <h2>Order Total: ${{ orderTotal | number: '1.2' }}</h2>
+    </mat-card-content>
+  </mat-card>
+  <mat-dialog-actions>
+    <button mat-raised-button color="accent" mat-dialog-close >Close</button>
+  </mat-dialog-actions>
+</mat-dialog-content>

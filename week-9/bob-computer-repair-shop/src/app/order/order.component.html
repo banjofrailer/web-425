@@ -1,0 +1,52 @@
+<div fxLayout fxLayout="row wrap" fxLayoutGap="20px">
+  <div fxFlex class="service-list">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Services</mat-card-title>
+      <mat-card-content>
+        <!--<form fxLayout="column" novalidate>-->
+          <!--<div *ngFor="let data of Data; let i=index">
+          <label>
+              <input type="checkbox" [value]="data.value" (change)="onCheckboxChange($event)">
+                  {{ data.name }}
+          </label>-->
+          <mat-list>
+            <mat-list-item *ngFor="let item of Data">
+              <mat-checkbox [(ngModel)]="item.checked">
+                {{ item.name }}
+              </mat-checkbox>
+            </mat-list-item>
+          </mat-list>
+
+        <!--</form>-->
+      </mat-card-content>
+    <!--</mat-card>
+  </div>-->
+
+
+<!--<div fxFlex class="standard-fees">
+    <mat-card class="mat-elevation-z8">
+      <mat-card-title>Standard Fees</mat-card-title> -->
+      <!--<mat-card-content [formGroup]="form" fxLayout="column">-->
+        <mat-card-content fxLayout="column">
+          <mat-card-title>Standard Fees</mat-card-title>
+        <!--<form fxLayout="column" fxLayoutGap="16px">-->
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Parts - Enter Value</mat-label>
+            <!--<input type="parts" name="parts" id="parts" matInput formControlName="parts" />-->
+            <input type="text" [(ngModel)]="partsValue" (change)="getPartsValue()" matInput>
+          </mat-form-field>
+          <mat-form-field fxFlex appearance="fill">
+            <mat-label>Hours of Labor - $50/hour</mat-label>
+            <!--<input type="parts" name="parts" id="parts" matInput formControlName="parts" />-->
+            <input type="text" [(ngModel)]="laborValue" (change)="getLaborValue()" matInput>
+          </mat-form-field>
+          <!--</form>-->
+      </mat-card-content>
+    </mat-card>
+   </div>
+
+ <input type="submit" class="calculate" value="Calculate" (click)="generateSummary()">
+
+      </div>
+
+    <!--<button type="submit" mat-raised-button color="primary">Submit</button>-->
